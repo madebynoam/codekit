@@ -111,6 +111,46 @@ The command automatically handles common environment issues:
 3. **Start server** - Automatically run the detected command in background
 4. **Show output** - Display server logs and URL
 
+## Example: wp-calypso (A4A)
+
+```
+Detected: Node.js project (yarn)
+Found script: start-a8c-for-agencies
+Running: yarn start-a8c-for-agencies
+
+[server] Building packages...
+[server] Server listening on http://localhost:3000
+[server] Webpack compiled successfully
+
+✓ Development server started at http://localhost:3000
+```
+
+## Example: Next.js Project
+
+```
+Detected: Next.js project (npm)
+Found script: dev
+Running: npm run dev
+
+ready - started server on 0.0.0.0:3000
+✓ Development server started at http://localhost:3000
+```
+
+## Example: Rails Project
+
+```
+Detected: Ruby on Rails project
+Running: rails server
+
+=> Booting Puma
+=> Rails 7.0.0 application starting in development
+=> Run `bin/rails server --help` for more startup options
+Puma starting in single mode...
+* Listening on http://localhost:3000
+
+✓ Development server started at http://localhost:3000
+```
+
 ## After Starting
 
 The server runs in the background:
@@ -135,7 +175,7 @@ Just tell Claude what command to run, and it will remember for next time.
 If the port is already in use, you'll be asked to choose:
 
 ```
-Port 3000 is already in use by:
+⚠️  Port 3000 is already in use by:
     PID 12345: node /path/to/project/server.js
 
 What would you like to do?
@@ -145,7 +185,52 @@ What would you like to do?
 Choose option (1 or 2):
 ```
 
-## Common Ports
+**Option 1: Kill existing process**
+- Stops the conflicting process
+- Starts the server on the intended port
+- Useful when the old process is from the same project
+
+**Option 2: Use different port**
+- Starts the server on the next available port
+- Keeps the existing process running
+- Useful when both servers need to run simultaneously
+
+You can also manually manage processes:
+```bash
+/stop           # Stop existing server
+/start          # Try again
+```
+
+## Troubleshooting
+
+**Server won't start:**
+1. Check the error message
+2. Try `/stop` first
+3. Run `/build` if needed
+4. Check project-specific requirements
+
+**Wrong command detected:**
+Tell Claude the correct command and it will use that next time.
+
+## Notes
+
+- **Mostly automatic** - Detects and fixes issues, prompts only when needed (port conflicts)
+- **Runs in background** - You can keep working while server starts
+- **Smart detection** - Checks multiple indicators and environment requirements
+- **Portable** - Works in any project with zero configuration
+- **Self-healing** - Auto-installs Node versions, intelligently handles port conflicts
+
+## Project-Specific Details
+
+### wp-calypso A4A
+- Runs: `yarn start-a8c-for-agencies`
+- Port: 3000
+- Node: v22.9.0+ (auto-installed via nvm)
+- Hot reload: Yes
+- Build on start: Yes
+- First build: ~2-5 minutes
+
+### Common Ports
 - 3000 - Most Node.js projects, Rails
 - 8000 - Django
 - 5000 - Flask
@@ -154,4 +239,4 @@ Choose option (1 or 2):
 
 ---
 
-**This command works everywhere! It detects your project type and starts the dev server.**
+**This command works everywhere! Copy `.claude/commands/` to any project and `/start` will just work.**

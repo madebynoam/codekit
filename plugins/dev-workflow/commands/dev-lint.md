@@ -46,6 +46,47 @@ Looks for these lint scripts:
 - **Rust**: `cargo clippy`
 - **PHP**: `phpcs`, `php-cs-fixer`
 
+## Example: wp-calypso (ESLint)
+
+```
+Detected: ESLint (yarn)
+Running: yarn lint:js
+
+✓ All files pass linting
+
+Or with issues:
+client/components/Button.tsx
+  23:5  error  'React' must be in scope  react/react-in-jsx-scope
+  
+✖ 1 problem (1 error, 0 warnings)
+  Potentially fixable with --fix option
+```
+
+## Example: Python (Black + Flake8)
+
+```
+Detected: black, flake8
+Running: black . && flake8
+
+All done! ✨
+12 files left unchanged.
+
+Or with issues:
+app/models.py:45:80: E501 line too long (88 > 79 characters)
+```
+
+## Example: Rust (Clippy)
+
+```
+Detected: Cargo with clippy
+Running: cargo clippy
+
+warning: unused variable: `x`
+  --> src/main.rs:10:9
+
+warning: 1 warning emitted
+```
+
 ## Auto-Fix
 
 Many linters support auto-fix:
@@ -76,6 +117,25 @@ The command figures out which linters apply to that file:
 - `.rb` → Rubocop
 - `.rs` → Clippy
 
+## Common Issues & Auto-Fixes
+
+The command will auto-fix these when using `--fix`:
+- Missing semicolons
+- Incorrect indentation
+- Trailing whitespace
+- Import order
+- Quote style
+- Spacing issues
+
+## Pre-commit Integration
+
+If the project has pre-commit hooks, the command respects them:
+
+```
+Detected: pre-commit hooks
+Running linters configured in .pre-commit-config.yaml
+```
+
 ## Multiple Linters
 
 If multiple linters are detected, runs all of them:
@@ -84,9 +144,9 @@ If multiple linters are detected, runs all of them:
 Detected: ESLint, Prettier, Stylelint
 Running all linters...
 
-ESLint passed
-Prettier passed
-Stylelint passed
+✓ ESLint passed
+✓ Prettier passed  
+✓ Stylelint passed
 ```
 
 ---

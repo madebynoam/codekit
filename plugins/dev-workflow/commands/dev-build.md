@@ -52,6 +52,43 @@ Looks for these build scripts:
 - **Cargo**: Detects `Cargo.toml` → `cargo build`
 - **Go**: Detects `go.mod` → `go build`
 
+## Example: wp-calypso
+
+```
+Detected: Node.js project (yarn) with Webpack
+Running: yarn build
+
+Building packages... ✓
+Building static assets... ✓
+Building CSS... ✓
+Building server... ✓
+
+Build completed in 45.2s
+Output: build/ and public/
+```
+
+## Example: Next.js
+
+```
+Detected: Next.js
+Running: next build
+
+Creating an optimized production build...
+Compiled successfully.
+
+Build output: .next/
+```
+
+## Example: Rust
+
+```
+Detected: Cargo project
+Running: cargo build --release
+
+   Compiling myproject v0.1.0
+    Finished release [optimized] target(s) in 23.45s
+```
+
 ## Clean Build
 
 Force a clean build (removes old build artifacts first):

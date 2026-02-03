@@ -49,6 +49,49 @@ Looks for these test scripts:
 - **PHP**: `phpunit`
 - **Rust**: `cargo test`
 
+## Example: wp-calypso
+
+```
+Detected: Jest (yarn)
+Running: yarn test-client
+
+PASS  client/a8c-for-agencies/sections/overview/overview.test.tsx
+  ✓ renders without crashing
+  ✓ displays site stats
+  ✓ handles loading state
+
+Test Suites: 1 passed, 1 total
+Tests:       3 passed, 3 total
+```
+
+## Example: Python/Pytest
+
+```
+Detected: pytest
+Running: pytest
+
+test_user.py ....                                        [ 50%]
+test_api.py ....                                         [100%]
+
+============== 8 passed in 0.45s ==============
+```
+
+## Example: Rails/RSpec
+
+```
+Detected: RSpec
+Running: bundle exec rspec
+
+UserController
+  GET #index
+    ✓ returns success
+  POST #create
+    ✓ creates new user
+
+Finished in 1.23 seconds
+2 examples, 0 failures
+```
+
 ## Watch Mode
 
 Most frameworks support watch mode:

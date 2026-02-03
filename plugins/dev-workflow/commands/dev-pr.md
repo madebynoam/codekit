@@ -7,7 +7,7 @@ arguments:
     required: false
 ---
 
-Create a well-structured draft PR.
+Create a well-structured draft PR following wp-calypso conventions.
 
 ## Key Principles
 
@@ -47,9 +47,11 @@ If not provided, infer from:
 
 ### 4. Draft the PR body
 
-Follow this structure:
+Follow this structure (based on .github/PULL_REQUEST_TEMPLATE.md):
 
 ```markdown
+Part of #{issue-number-if-known}
+
 ## Proposed Changes
 
 - {Bullet list of what changed}
@@ -65,6 +67,13 @@ This is the MOST IMPORTANT section - future developers need to understand WHY.}
 - [ ] Navigate to {path}
 - [ ] Do {action}
 - [ ] Verify {expected result}
+
+## Pre-merge Checklist
+
+- [ ] Has the general commit checklist been followed? (PCYsg-hS-p2)
+- [ ] Have you written new tests for your changes?
+- [ ] Have you tested the feature in Simple, Atomic, and self-hosted Jetpack sites?
+- [ ] Have you checked for TypeScript, React or other console errors?
 ```
 
 ### 5. Show preview and confirm
@@ -80,6 +89,8 @@ git push -u origin {branch-name}
 # Create draft PR
 gh pr create --draft --title "{title}" --body "{body}"
 ```
+
+Use `gh api` REST endpoint if `gh pr create` fails due to GraphQL errors.
 
 ### 7. Report success
 
@@ -99,9 +110,9 @@ Show:
 
 ### Good "Why" section:
 ```
-The marketplace slider was displaying incorrectly - the progress
+The A4A marketplace slider was displaying incorrectly - the progress
 fill appeared always full or reversed, making it difficult for users
-to understand their current selection state.
+to understand their current selection state when purchasing additional sites.
 ```
 
 ### Bad "Why" section:
