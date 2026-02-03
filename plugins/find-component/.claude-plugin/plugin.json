@@ -1,0 +1,8 @@
+{
+  "name": "find-component",
+  "description": "Find UI components from screenshots, routes, or names — for designers navigating codebases",
+  "version": "1.0.0",
+  "author": {
+    "name": "Noam Almosnino"
+  }
+}

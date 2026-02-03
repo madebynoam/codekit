@@ -1,0 +1,45 @@
+{
+  "name": "codekit",
+  "owner": {
+    "name": "Noam Almosnino",
+    "email": "noam@noamalmos.com"
+  },
+  "metadata": {
+    "description": "Productivity skills for Claude Code — task management, session continuity, universal dev commands, and component finding.",
+    "version": "1.0.0"
+  },
+  "plugins": [
+    {
+      "name": "do-tasks",
+      "source": "./plugins/do-tasks",
+      "description": "Task management with prioritization coaching — add, list, complete, and coach your way through work",
+      "version": "1.0.0",
+      "category": "productivity",
+      "tags": ["tasks", "productivity", "prioritization", "coaching"]
+    },
+    {
+      "name": "sesh",
+      "source": "./plugins/sesh",
+      "description": "Session continuity — save transcripts, resume where you left off, reflect on learnings, and close cleanly",
+      "version": "1.0.0",
+      "category": "productivity",
+      "tags": ["session", "continuity", "reflection", "journaling"]
+    },
+    {
+      "name": "dev-workflow",
+      "source": "./plugins/dev-workflow",
+      "description": "Universal dev commands — auto-detecting start, build, lint, test, commit, branch, rebase, and PR creation",
+      "version": "1.0.0",
+      "category": "development",
+      "tags": ["dev", "git", "build", "test", "lint", "ci"]
+    },
+    {
+      "name": "find-component",
+      "source": "./plugins/find-component",
+      "description": "Find UI components from screenshots, routes, or names — for designers navigating codebases",
+      "version": "1.0.0",
+      "category": "design",
+      "tags": ["design", "components", "screenshots", "navigation"]
+    }
+  ]
+}

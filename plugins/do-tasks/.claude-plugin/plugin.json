@@ -1,0 +1,8 @@
+{
+  "name": "do-tasks",
+  "description": "Task management with prioritization coaching — add, list, complete, and coach your way through work",
+  "version": "1.0.0",
+  "author": {
+    "name": "Noam Almosnino"
+  }
+}

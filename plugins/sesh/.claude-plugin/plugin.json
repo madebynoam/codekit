@@ -1,0 +1,8 @@
+{
+  "name": "sesh",
+  "description": "Session continuity — save transcripts, resume where you left off, reflect on learnings, and close cleanly",
+  "version": "1.0.0",
+  "author": {
+    "name": "Noam Almosnino"
+  }
+}
