@@ -6,6 +6,8 @@ By [Noam Almosnino](https://noamalmos.com)
 
 ## Quick Start
 
+In Claude Code, run:
+
 ```bash
 # Add the marketplace
 /plugin marketplace add madebynoam/codekit
