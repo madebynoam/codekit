@@ -1,5 +1,5 @@
 ---
-name: do-coach
+name: do:coach
 description: Prioritization coach that helps decide what to work on next through quick questions about impact, urgency, and effort. Considers long-term goals and maintains session history. Triggers on "/do:coach", "/do:what", "/do:next", or "what should I work on", "help me prioritize".
 ---
 

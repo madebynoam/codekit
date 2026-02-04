@@ -1,5 +1,5 @@
 ---
-name: do-list
+name: do:list
 description: List all pending tasks from global and project task stacks. Alias for /tasks. Triggers on "/do:list", "/do:tasks", or "show my tasks".
 ---
 

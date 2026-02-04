@@ -1,6 +1,10 @@
 ---
-name: do-add
+name: do:add
 description: Add tasks to your task stack. Alias for /add-task. Triggers on "/do:add my task" or "/do:add task1 | task2". Use --local for project tasks, default is global.
+arguments:
+  - name: task
+    description: The task(s) to add. Use | to separate multiple tasks.
+    required: true
 ---
 
 # Add Task

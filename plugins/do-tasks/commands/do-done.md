@@ -1,6 +1,10 @@
 ---
-name: do-done
+name: do:done
 description: Mark a task as complete. Alias for /done-task. Triggers on "/do:done 3" or "/do:done fix bug". Accepts task number or partial text match.
+arguments:
+  - name: task
+    description: Task number or partial text match
+    required: true
 ---
 
 # Mark Task Done
