@@ -1,3 +1,8 @@
+---
+name: dev:lint
+description: Universal lint command - auto-detects and runs your linters
+---
+
 # Lint Code
 
 **Universal command** - Works in ANY repository. Automatically detects and runs your linters.

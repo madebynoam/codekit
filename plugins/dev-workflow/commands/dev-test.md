@@ -1,3 +1,8 @@
+---
+name: dev:test
+description: Universal test command - auto-detects and runs your tests
+---
+
 # Run Tests
 
 **Universal command** - Works in ANY repository. Automatically detects and runs your tests.

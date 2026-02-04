@@ -1,5 +1,5 @@
 {
-  "name": "dev-workflow",
+  "name": "dev",
   "description": "Universal dev commands — auto-detecting start, build, lint, test, commit, branch, rebase, and PR creation",
   "version": "1.0.0",
   "author": {

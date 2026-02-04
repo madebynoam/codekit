@@ -1,3 +1,8 @@
+---
+name: dev:stop
+description: Universal stop command - finds and stops running dev server
+---
+
 # Stop Development Server
 
 **Universal command** - Works in ANY repository. Automatically stops the running development server.

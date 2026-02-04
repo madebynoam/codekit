@@ -1,3 +1,8 @@
+---
+name: do:learned
+description: Learned - Quick Journal Entry
+---
+
 # Learned - Quick Journal Entry
 
 Log something you learned — to Day One or a local markdown file.

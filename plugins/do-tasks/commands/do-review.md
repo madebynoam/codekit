@@ -1,3 +1,8 @@
+---
+name: do:review
+description: Learned Review - Show What You've Learned
+---
+
 # Learned Review - Show What You've Learned
 
 Review your logged learnings — from Day One or a local markdown file.

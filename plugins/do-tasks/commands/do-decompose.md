@@ -1,3 +1,8 @@
+---
+name: do:decompose
+description: Help me think through and decompose this problem
+---
+
 Help me think through and decompose this problem:
 
 $ARGUMENTS

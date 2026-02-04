@@ -1,3 +1,8 @@
+---
+name: dev:start
+description: Universal start command - auto-detects project type and starts dev server
+---
+
 # Start Development Server
 
 **Universal command** - Works in ANY repository. Automatically detects your project type and starts the dev server.

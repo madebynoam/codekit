@@ -1,3 +1,8 @@
+---
+name: dev:bugfix-check
+description: Pre-bug-fix commit checklist - document, find similar issues, prevent recurrence
+---
+
 # Pre-Bug-Fix Commit Checklist
 
 Before committing this bug fix, let's ensure we've done our due diligence. This command helps prevent future bugs and documents the fix properly.

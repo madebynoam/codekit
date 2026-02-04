@@ -1,3 +1,8 @@
+---
+name: dev:build
+description: Universal build command - auto-detects and runs your build process
+---
+
 # Build Project
 
 **Universal command** - Works in ANY repository. Automatically detects and runs your build process.
