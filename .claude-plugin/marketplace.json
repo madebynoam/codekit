@@ -10,8 +10,8 @@
   },
   "plugins": [
     {
-      "name": "do-tasks",
-      "source": "./plugins/do-tasks",
+      "name": "do",
+      "source": "./plugins/do",
       "description": "Task management with prioritization coaching — add, list, complete, and coach your way through work",
       "version": "1.0.0",
       "category": "productivity",
