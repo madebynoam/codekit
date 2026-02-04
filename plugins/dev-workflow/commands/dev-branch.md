@@ -69,8 +69,8 @@ git checkout -b {branch-name}
 
 ### 7. Report success
 Show:
-- Pulled latest trunk
-- Created branch: `{branch-name}`
+- ✓ Pulled latest trunk
+- ✓ Created branch: `{branch-name}`
 - Ready to start work!
 
 ## Examples

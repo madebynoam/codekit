@@ -72,7 +72,7 @@ If yes, invoke sesh:reflect.
 
 **In a project:**
 ```
-/sesh:close anthropic-prep
+/sesh:close feature-work
 ```
 → Saves to project's sessions folder, updates CLAUDE.md
 

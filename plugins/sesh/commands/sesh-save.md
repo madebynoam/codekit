@@ -14,7 +14,7 @@ Save this session to `~/Claude Sessions/` with both a raw transcript and summary
 ### 1. Determine the session name
 - If a name argument was provided, use it (convert spaces to hyphens, lowercase)
 - If no name provided, create a brief 2-4 word summary of the main topic
-- Format: `YYYY-MM-DD-{name}` (e.g., `2026-01-20-a4a-responsive-styling`)
+- Format: `YYYY-MM-DD-{name}` (e.g., `2026-01-20-dashboard-responsive-fix`)
 
 ### 2. Create the session folder
 ```
@@ -52,7 +52,7 @@ Report:
 
 ```markdown
 # summary.md
-# Session: A4A Responsive Styling Updates
+# Session: Dashboard Responsive Styling Updates
 
 **Date:** 2026-01-20
 **Directory:** /Users/name/project

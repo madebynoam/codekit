@@ -63,7 +63,7 @@ Found process:
   Command: node build/server.js
 
 Stopping server gracefully...
-Server stopped successfully
+✓ Server stopped successfully
 ```
 
 ---

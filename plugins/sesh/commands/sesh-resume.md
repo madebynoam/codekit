@@ -70,11 +70,11 @@ What would you like to do?
 
 ## Examples
 
-**In anthropic-application project:**
+**In a project directory:**
 ```
 /sesh:resume
 ```
-→ Reads CLAUDE.md, shows interview progress, reminds we're on flow-editor-wp Q1
+→ Reads CLAUDE.md, shows progress, reminds where you left off
 
 **In any directory:**
 ```

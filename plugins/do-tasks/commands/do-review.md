@@ -1,6 +1,6 @@
 # Learned Review - Show What You've Learned
 
-Review entries from your Day One "Learned" journal.
+Review your logged learnings — from Day One or a local markdown file.
 
 ## Usage
 ```
@@ -26,31 +26,51 @@ Review entries from your Day One "Learned" journal.
 
 Parse the filter from: $ARGUMENTS
 
-1. Determine the filter type:
-   - If empty or "today": query entries from today
-   - If "yesterday": query entries from yesterday
-   - If "week": query entries from the last 7 days
-   - If starts with "#": search for entries with that tag
+### 0. Determine storage backend
 
-2. Query the "Learned" journal with appropriate date range or search query
+Read `~/.claude/journal-config.md` to determine whether learnings are stored in Day One or a markdown file.
 
-3. Use AskUserQuestion to ask how they want to see the results:
-   - **List view**: Show each entry as a bullet point with tags
-   - **Summary**: Generate a synthesized summary that groups related learnings, highlights key themes, and presents insights in a digestible narrative format
+- If the config file doesn't exist, check if Day One MCP is available and prompt setup (see `/learned` command for the setup flow).
+- If `learned_backend: markdown`, read from the configured `learned_file` path.
+- Otherwise, use Day One with the configured `learned_journal_id`.
 
-4. Present based on their choice:
+### 1. Parse filter
 
-   **For List view**:
-   - Group by date if showing multiple days
-   - Show each entry as a clean bullet
-   - Include tags inline
-   - Show total count
+Determine the filter type:
+- If empty or "today": query entries from today
+- If "yesterday": query entries from yesterday
+- If "week": query entries from the last 7 days
+- If starts with "#": search for entries with that tag
 
-   **For Summary**:
-   - Group related learnings by theme/topic
-   - Write a brief narrative synthesis
-   - Highlight connections between entries
-   - End with key takeaways
-   - Keep it concise but insightful
+### 2. Query entries
 
-5. If no entries found, let the user know in a friendly way.
+**If using Day One:**
+Query the configured Learned journal with appropriate date range or search query.
+
+**If using markdown:**
+Read the configured markdown file and filter entries by date or tag based on the parsed `**Date:**` and `**Tags:**` lines in each entry.
+
+### 3. Display options
+
+Use AskUserQuestion to ask how they want to see the results:
+- **List view**: Show each entry as a bullet point with tags
+- **Summary**: Generate a synthesized summary that groups related learnings, highlights key themes, and presents insights in a digestible narrative format
+
+### 4. Present results
+
+**For List view**:
+- Group by date if showing multiple days
+- Show each entry as a clean bullet
+- Include tags inline
+- Show total count
+
+**For Summary**:
+- Group related learnings by theme/topic
+- Write a brief narrative synthesis
+- Highlight connections between entries
+- End with key takeaways
+- Keep it concise but insightful
+
+### 5. Handle empty results
+
+If no entries found, let the user know in a friendly way.

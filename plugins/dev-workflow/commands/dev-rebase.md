@@ -50,10 +50,10 @@ If rebase succeeded:
 
 ### 7. Report summary
 Show:
-- Rebased with trunk
-- X commits replayed
-- Stash restored (if applicable)
-- Pushed to remote (if applicable)
+- ✓ Rebased with trunk
+- ✓ X commits replayed
+- ✓ Stash restored (if applicable)
+- ✓ Pushed to remote (if applicable)
 
 ## Safety Notes
 - Always use `--force-with-lease` not `--force`

@@ -19,16 +19,16 @@ A quick coaching session to help pick the right task to work on.
 # Goals & Aspirations
 
 ## Career
-- Get promoted to Senior Designer
-- Build AI/design portfolio pieces
+- Grow into a senior role
+- Build portfolio pieces that demonstrate impact
 
 ## Personal
-- Spanish fluency by end of year
+- Learn a new skill outside of work
 - More time for creative projects
 
 ## Current Focus (this quarter)
-- Ship A4A improvements
-- Establish design system patterns
+- Ship current project improvements
+- Establish repeatable patterns
 ```
 
 If no goals file exists, offer to set them up. **Ask one question at a time** — don't overwhelm with multiple questions. Flow:
@@ -45,10 +45,10 @@ Then create the file.
 ## 2026-01-29
 
 **Tasks reviewed:** 10
-**Recommended:** Work on Referrals with Gustav
-**Chose:** Spanish practice app
+**Recommended:** Work on onboarding flow
+**Chose:** Side project prototype
 **Reason:** Needed a warmup
-**Aligned with goal:** Spanish fluency
+**Aligned with goal:** Learn a new skill
 
 ---
 ```
@@ -81,11 +81,11 @@ Show tasks with goal alignment hints:
 ```
 Tasks (10 pending):
 
-1. Anthropic app
-2. Fix Resources page responsiveness
-3. Referrals with Gustav [Career: A4A]
-4. Write post about skills [Career: portfolio]
-5. Spanish practice app [Personal: Spanish]
+1. Dashboard redesign
+2. Fix landing page responsiveness
+3. Onboarding flow updates [Career: project]
+4. Write blog post about workflow [Career: portfolio]
+5. Side project prototype [Personal: new skill]
 ...
 ```
 
@@ -105,14 +105,14 @@ Assess each task on:
 
 Ask about 1-2 tasks:
 
-> "Spanish practice" keeps getting deferred. Is this actually a priority, or should we drop it from the list?
+> "Side project" keeps getting deferred. Is this actually a priority, or should we drop it from the list?
 
-> "Write post about skills" — this aligns with your portfolio goal. When's the right time?
+> "Write blog post" — this aligns with your portfolio goal. When's the right time?
 
 ### 5. Challenge Assumptions
 
-Automattic culture calibration:
-- Async means no one expects instant responses
+General calibration:
+- Async work means no one expects instant responses
 - "ASAP" often means "whenever"
 - Perfectionism on low-visibility work is wasted
 
@@ -155,17 +155,17 @@ Full review with goal scoring:
 
 | Task | Impact | Urgency | Effort | Goal | Verdict |
 |------|--------|---------|--------|------|---------|
-| Referrals | High | Medium | 2hr | Career | **Do today** |
-| Spanish app | Medium | Low | 1hr | Personal | Schedule |
-| Fix Resources | Medium | Low | 1hr | None | Quick-pass |
+| Onboarding flow | High | Medium | 2hr | Career | **Do today** |
+| Side project | Medium | Low | 1hr | Personal | Schedule |
+| Fix landing page | Medium | Low | 1hr | None | Quick-pass |
 
 ## Pattern Insights
 
 After 5+ sessions, offer insights:
 
-> You tend to defer personal goals for work tasks. Want to protect time for Spanish practice?
+> You tend to defer personal goals for work tasks. Want to protect time for your side project?
 
-> "Write post" has been on your list for 2 weeks. Either schedule it or drop it.
+> "Write blog post" has been on your list for 2 weeks. Either schedule it or drop it.
 
 ## Quick Reference
 
