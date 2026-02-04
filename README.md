@@ -13,7 +13,7 @@ In Claude Code, run:
 /plugin marketplace add madebynoam/codekit
 
 # Install what you need
-/plugin install do-tasks@codekit
+/plugin install do@codekit
 /plugin install sesh@codekit
 /plugin install dev-workflow@codekit
 /plugin install find-component@codekit
@@ -21,7 +21,7 @@ In Claude Code, run:
 
 ## Plugins
 
-### do-tasks — Task Management
+### do — Task Management
 
 A task stack with prioritization coaching. Add tasks, check them off, and get help deciding what to work on next.
 
@@ -100,7 +100,7 @@ Then install individual plugins — you don't have to install everything:
 
 ```bash
 /plugin install dev-workflow@codekit    # Just the dev commands
-/plugin install do-tasks@codekit        # Just task management
+/plugin install do@codekit        # Just task management
 ```
 
 ### Manual
@@ -108,8 +108,8 @@ Then install individual plugins — you don't have to install everything:
 ```bash
 git clone https://github.com/madebynoam/codekit.git
 cp -r codekit/plugins/dev-workflow/commands/* ~/.claude/commands/
-cp -r codekit/plugins/do-tasks/skills/* ~/.claude/skills/
-cp -r codekit/plugins/do-tasks/commands/* ~/.claude/commands/
+cp -r codekit/plugins/do/skills/* ~/.claude/skills/
+cp -r codekit/plugins/do/commands/* ~/.claude/commands/
 # etc.
 ```
 
